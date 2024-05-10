@@ -12,6 +12,7 @@ body{
 
 #logoNavBar{
   flex: 20%;
+  margin: auto auto;
 }
 
 #inputNavBar{
@@ -26,11 +27,13 @@ body{
   display: flex;
   text-align: center;
   align-items: center;
+  padding: 10px;
+  background-color: #eee;
 }
 
 #navBar img{
-  width: 200px;
-  height: 65px;
+  width: 180px;
+  height: 45px;
 }
 
 #navBar input{
