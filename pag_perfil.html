@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/pag_perfil_style.css">
+    <script src="assets/js/pag_perfil_script.js"></script>
+    <title>Página de Perfil</title>
+</head>
+<body>
+    <div id="overlay"></div>
+    <!-- <header>
+        <nav class="navbar">
+            <a href="#" id="navlogo">
+                <img src="img/Logo_LearnInFlow.png" alt="Logo da LearnInFlow">
+            </a>
+            <input type="text" id="search-bar" placeholder="Pesquisar">
+            <section class="user">
+                <button id="btn_criarcomunidade"><span><img src="img/Plus.png" alt="" srcset=""></span> Nova Comunidade</button>
+                <section class="navuser">
+                        <img src="img/Userpic.png" alt="" id="userpic">
+                        <p>etecHas</p></section>
+                </section>
+            </section>
+        </nav>
+    </header> -->
+    <main>
+        <section class="user-profile">
+            <img src="assets/img/userpic_big.png" alt="Imagem de Perfil" id="profilepic">
+            <section class="user-data">
+                <p id="username">Colégio Estadual Dengoso</p>
+                <section class="user-data-btns">
+                    <button id="edit-btn" onclick="editBtn()">Editar perfil</button>
+                    <button id="newpost-btn" onclick="newPostBtn()"><span><img src="assets/img/Plus.png" alt=""></span>Nova postagem</button>
+                </section>
+                <section class="user-data-numbers">
+                    <p id="number">5 Publicações</p>
+                    <p id="number">5 Seguidores</p>
+                    <p id="number">0 Seguindo</p>
+                    <p id="number">3 Contas responsáveis</p>
+                </section>
+                <section class="user-data-btns2">
+                    <button id="localization-btn"><span><img src="assets/img/localization_icon.png" alt="Ícone de Localização" srcset=""></span>Localiz.</button>
+                    <button id="website-btn"><span><img src="assets/img/website_icon.png" alt="Ícone de WebSite"></span>Site</button>
+                    <button id="telephone-btn"><span><img src="assets/img/phone_icon.png" alt="Ícone de Telefone"></span>Telef.</button>
+                    <button id="email-btn"><span><img src="assets/img/mail_icon.png" alt="Ícone de Email"></span>Email</button>
+                </section>
+            </section>
+        </section>
+        <form action="" method="get" id="user-data-bio">
+            <input type="text" id="user-bio" name="user-bio">
+        </form>
+        <section class="communities">
+            <p style="font-size: 14px;">Comunidades em que você é membro</p>
+            <ul class="communities-following">
+                <button onclick=""><img src="assets/img/seta.png" alt="Seta para esquerda"></button>
+                <li>
+                    <p id="community-name">Comunidade 1</p>
+                    <p id="community-description">Como enturmar alunos peixes</p>
+                </li>
+                <button onclick=""><img src="assets/img/seta_direita.png" alt="Seta para direita"></button>
+            </ul>
+        </section>
+        <div class="divisor"></div>
+        <section class="user-posts">
+            <ul class="posts">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+    <section id="newpost-modal">
+        <section class="newpost">
+            <div class="title">
+                <h1>Criar postagem</h1>
+                <button onclick="cancelBtn()"><img src="assets/img/X.png" alt=""></button>
+            </div>
+            <p id="newpost-text1">Crie uma postagem para outras escolas poderem conhecer mais sobre sua unidade</p>
+            <p id="newpost-text2">Faça upload de uma foto, vídeo ou arquivo</p>
+            <div class="upload">
+                <img src="assets/img/upload_icon.png" alt="Ícone de upload">
+            </div>
+            <div class="description">
+                <p id="newpost-text3">Descrição</p>
+                <input type="text" id="">
+            </div>
+            <div class="newpost-btns">
+                <button id="cancel-btn" onclick="cancelBtn()">Cancelar</button>
+                <button id="post-btn" onclick="postBtn()">Postar</button>
+            </div>
+        </section>
+    </section>
+    <section id="newpost-feedback-modal">
+        <section class="newpost-feedback">
+            <button onclick="cancelBtn()" id="feedback-x"><img src="assets/img/X.png" alt=""></button>
+            <div class="feedback">
+                <img src="assets/img/check-icon.png" alt="Ícone de Correto" id="feedback-checkicon">
+                <div class="title-feedback">
+                    <h1>Parabéns</h1>
+                </div>
+                <div class="subtitle-feedback">
+                    <p>Nome da escola</p>
+                    <p>Postagem criada com sucesso</p>
+                </div>
+                <button onclick="cancelBtn()" id="continuebtn-feedback">Continuar</button>
+            </div>
+        </section>
+    </section>
+            <!-- <section id="editdata-modal">
+                <section class="data">
+                    <div class="title">
+                        <h1>Localização</h1>
+                        <button onclick="cancelBtn()"><img src="img/X.png" alt=""></button>
+                    </div>
+                    <input type="text" id="data1">
+                    <input type="text" id="data2">
+                    <input type="text" id="data3">
+                </section>
+            </section> -->
+
+</body>
+</html>
