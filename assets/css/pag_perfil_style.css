@@ -433,3 +433,7 @@ main{
     border-radius: 70px;
     border: none;
 }
+
+#descPost{
+    padding-left: 10px;
+}
