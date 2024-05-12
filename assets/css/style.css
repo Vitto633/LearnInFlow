@@ -6,11 +6,15 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto';
+  text-decoration: none;
+}
+
+a{
+  color: black;
 }
 
 body{
   background-color: #eee;
-  /* display: flex; */
 }
 
 #divisao{
@@ -137,22 +141,37 @@ body{
   border-radius: 2px;
   display: flex;
   color: black;
-  flex-flow: wrap;
+  flex-flow: nowrap;
   gap: 10px;
   height: 33px;
-  width: 255px;
+  flex: 100%;
   text-align: center;
   align-items: center;
+}
+
+.containerInside{
+  flex: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.iconeFlechaInside{
+  flex: 10%;
+  font-size: 20px;
+  padding-right: 10px;
 }
 
 .textoInside{
   font-size: 18px;
   padding-left: 20px;
+  flex: 85%;
+  text-align: start;
 }
 
 .iconeInside{
   font-size: 25px;
   padding-left: 10px;
+  flex: 5%;
 }
 
 .disciplinasClick{
