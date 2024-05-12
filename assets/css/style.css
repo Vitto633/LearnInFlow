@@ -198,7 +198,72 @@ header{
 .containerPost{
   width: 60%;
   background-color: #d5d5d5;
-  height: 675px;
+  height: 590px;
   border-radius: 10px;
+  padding-left: 30px;
+}
 
+.btnDenunciar{
+  border: none;
+  flex: 10%;
+  margin: auto auto;
+  background-color: #d5d5d5;
+}
+
+.btnDenunciar img{
+  width: 30px;
+  background-color: #d5d5d5;
+}
+
+.profileContainer{
+  display: flex;
+  flex: 90%;
+  /* padding-left: 25px; */
+}
+
+.topPost{
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-flow: nowrap row;
+  align-items: center;
+}
+
+.btnDenunciar button{
+  border-radius: 2px; 
+}
+
+.conteudoPost{
+  width: 95%;
+  height: 400px;
+  border-radius: 5px;
+  background-color: white;
+  margin: auto auto;
+  margin-top: 30px;
+  margin-right:38px ;
+}
+
+.btnsAvaliacao{
+  margin-top: 20px;
+}
+
+.btnsAvaliacao button{
+  border: none;
+  border-radius: 70px;
+  font-size: 20px;
+}
+
+.btnComentar{
+  width: 190px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+.btnCurtir{
+  width: 155px;
+  height: 60px;
+}
+
+.conteudoTodo{
+  top: 0;
 }
