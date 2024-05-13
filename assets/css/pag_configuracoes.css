@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+}
+body{
+  background-color: white !important;
+}
+
+#navBar{
+  border-bottom: 2px solid #D9D9D9;
+}
+
+.conteudoPagina{
+  margin-left: 20%;
+}
+.linha{
+  border-bottom: 2px solid #D9D9D9;
+  width: 90%;
+  margin-left: 10%;
+  margin-bottom: 100px;
+  /* margin-top: ; */
+}
+.btnVoltar{
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+  background-color: #D9D9D9;
+}
+
+.topoSite{
+  margin-top: 50px;
+  display: flex;
+  font-size: 20px;
+  color: black;
+  align-items: center;
+  /* margin-left: 20%; */
+}
+
+.topoSite p{
+  margin-left:105px ;
+}
+
+.informacao{
+  margin-bottom: 40px;
+  font-size: 18px;
+  display: inline-block;
+  width: 300px;
+}
+
+.caixaTexto{
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: #D9D9D9;
+}
+
+.informacoesEscola{
+  display: flex;
+  flex-flow: column;
+}
+
+.row{
+  display: flex;
+  gap: 20px;
+}
+
+.profile{
+  width: 320px;
+  height: 350px;
+  background-color: #D9D9D9;
+  position: absolute;
+  right: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.foto{
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.profile button{
+  margin-top: 50px;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #1565FF;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.mark{
+  margin-top: 100px;
+  font-size: 20px;
+  margin-left: 155px;
+}
+
+#email{
+  width: 330px;
+}
+
+select{
+  font-size: 20px;
+  -webkit-appearance: none;
+  border: none;
+}
+
+.btnsConta{
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.btnsConta button{
+  width: 160px;
+  height: 40px;
+  border: none;
+  background-color: #D9D9D9;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#delete{
+  background-color: red;
+  color: white;
+}
+
+footer{
+  margin-right: 15%;
+  font-size: 18px;
+  color: gray;
+  text-align: center;
+  margin-bottom: 50px;
+}
