@@ -24,112 +24,133 @@
     </div>
   </nav>
   <div id="divisao">
-    <section id="sideBar">
-      <div class="areaBtnSide">
-        <div class="iconeSide">
-          <i class="mdi mdi-home-account"></i>
-        </div>
-        <div class="textoSide">
-          <p>Página Inicial</p>
-        </div>
-        <div class="iconeFlecha">
-          <span class="mdi mdi-arrow-top-right"></span>
-        </div>
-      </div>
-
-      <a href="pag_perfil.html"><div class="areaBtnSide">
-        <div class="iconeSide">
-          <i class="mdi mdi-account"></i>
-        </div>
-        <div class="textoSide">
-          <p>Perfil</p>
-        </div>
-        <div class="iconeFlecha">
-          <span class="mdi mdi-arrow-top-right"></span>
-        </div>
-      </div></a>
-      
-
-      <div class="areaBtnSide">
-        <div class="iconeSide">
-          <i class="mdi mdi-account-group"></i>
-        </div>
-        <div class="textoSide">
-          <p>comunidades </p>
-        </div>
-        <div class="iconeFlecha">
-          <span class="mdi mdi-chevron-up"></span>
-        </div>
-      </div>
-
-      <div class="areaBtnSide click">
-        <div class="iconeSide">
-          <i class="mdi mdi-account-group"></i>
-        </div>
-        <div class="textoSide">
-          <p>comunidades</p>
-        </div>
-        <div class="iconeFlecha">
-          <span class="mdi mdi-chevron-down"></span>
-        </div>
-        <div class="containerInside">
-          <div class="areaBtnInside">
-            <div class="iconeInside">
-              <i class="mdi mdi-plus"></i>
-            </div>
-            <div class="textoInside">
-              <p>Criar</p>
-            </div>
-            <div class="iconeFlechaInside">
-          <span class="mdi mdi-arrow-top-right"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="areaBtnSide">
-        <div class="iconeSide">
-          <i class="mdi mdi-pencil-outline"></i>
-        </div>
-        <div class="textoSide">
-          <p>Disciplinas</p>
-        </div>
-        <div class="iconeFlecha">
-          <span class="mdi mdi-chevron-up"></span>
-        </div>
-      </div>
-      <div class="conteudoTodo">
-        <div class="areaBtnSide disciplinasClick">
-        <div class="iconeSide">
-          <i class="mdi mdi-pencil-outline"></i>
-        </div>
-        <div class="textoSide">
-          <p>Disciplinas</p>
-        </div>
-        <div class="iconeFlecha">
-          <span class="mdi mdi-chevron-down"></span>
-        </div>
-        <div class="containerInside" >
-          <div class="areaBtnInside click">
-            <div class="iconeInside">
-              <i class="mdi mdi-plus"></i>
-            </div>
-            <div class="textoInside">
-              <p>Criar</p>
-            </div>
-            <div class="areaBtnInside">
-              <div class="iconeInside">
-                <i class="mdi mdi-plus"></i>
-              </div>
-              <div class="textoInside">
-                <p>Criar</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </section>
+    <div class="sidebar ">
+        <ul class="nav-links">
+            <li>
+                <div class="container-box">
+                    <div class="icon_options">
+                        <a href="#">
+                            <i class="mdi mdi-home-account"></i>
+                            <span class="link_name">Página Inicial</span>
+                        </a>
+                        <i class="mdi mdi-arrow-top-right"></i>
+                    </div>
+                </div>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a href="#">
+                            <span class="link_name">Página Inicial</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="container-box">
+                    <div class="icon_options">
+                        <a href="#">
+                            <i class="mdi mdi-account"></i>
+                            <span class="link_name">Perfil</span>
+                        </a>
+                        <i class="mdi mdi-arrow-top-right"></i>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container-box showMenu">
+                    <div class="icon_options">
+                        <a href="#">
+                            <i class="mdi mdi-account-group"></i>
+                            <span class="link_name">Comunidade</span>
+                        </a>
+                        <i class="mdi mdi-chevron-down arrow"></i>
+                    </div>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <div class="container-box-menu">
+                            <a href="#">
+                                <img src="img/book-open-blank-variant-outline.svg" width="21px">
+                                <span class="sub-name">Criar comunidade</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="container-box">
+                    <div class="icon_options">
+                        <a href="#">
+                            <i class="mdi mdi-pencil-outline"></i>
+                            <span class="link_name">Disciplinas</span>
+                        </a>
+                        <i class="mdi mdi-chevron-down arrow"></i>
+                    </div>
+                </div>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link_name" href="#">
+                            <i class="mdi mdi-pencil-outline"></i>
+                            <span class="link_name">Disciplinas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="container-box-menu">
+                            <a href="#">
+                                <span class="sub-name">Português</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-box-menu">
+                            <a href="#">
+                                <span class="sub-name">Matemática</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-box-menu">
+                            <a href="#">
+                                <span class="sub-name">Inglês</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-box-menu">
+                            <a href="#">
+                                <span class="sub-name">Ciências</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-box-menu">
+                            <a href="#">
+                                <span class="sub-name">Geografia</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container-box-menu">
+                            <a href="#">
+                                <span class="sub-name">História</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="container-box">
+                    <div class="icon_options">
+                        <a href="#">
+                            <i class="mdi mdi-cog"></i>
+                            <span class="link_name">Configurações</span>
+                        </a>
+                        <i class="mdi mdi-arrow-top-right"></i>
+                    </div>
+                </div>
+                
+            </li>
+        </ul>
+    </div>
     <header>
       <div id="btnsHeader">
         <button id="btnPosts">Posts</button>
@@ -151,27 +172,6 @@
       </div>
     </header>
   </div>
-  <section id="newpost-modal">
-    <section class="newpost">
-        <div class="title">
-            <h1>Criar postagem</h1>
-            <button onclick="cancelBtn()"><img src="assets/img/X.png" alt=""></button>
-        </div>
-        <p id="newpost-text1">Crie uma postagem para outras escolas poderem conhecer mais sobre sua unidade</p>
-        <p id="newpost-text2">Faça upload de uma foto, vídeo ou arquivo</p>
-        <div class="upload">
-            <img src="assets/img/upload_icon.png" alt="Ícone de upload">
-        </div>
-        <div class="description">
-            <p id="newpost-text3">Descrição</p>
-            <input type="text" id="">
-        </div>
-        <div class="newpost-btns">
-            <button id="cancel-btn" onclick="cancelBtn()">Cancelar</button>
-            <button id="post-btn" onclick="postBtn()">Postar</button>
-        </div>
-    </section>
-</section>
   <script src="assets/js/script.js"></script>
 </body>
 

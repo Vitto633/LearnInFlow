@@ -84,106 +84,120 @@ body{
   cursor: pointer;
 }
 
-#sideBar{
-  display: inline-block; 
-  flex-flow: column wrap;
-  background-color: white;
-  width: 18%;
-  height: 1000px;
-  padding: 15px;
-
+.sidebar {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 275px;
+    background-color: #fff;
 }
 
-.areaBtnSide{
-  display: flex;
-  width: 95%;
-  background-color: #E8E8E8;
-  margin: auto auto;
-  height: 44px;
-  padding: 10px;
-  align-items: center;
-  border-radius: 5px;
-  margin-top: 10px;
+.sidebar .nav-links {
+    background-color: #fff;
+    padding-top: 20px;
 }
 
-.iconeSide{
-  flex: 10%;
-  /* padding: 5px; */
-  font-size: 25px;
+.sidebar .nav-links li {
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
 }
 
-.textoSide{
-  flex: 80%;
-  font-size: 20px;
-  padding-left: 10px;
+.sidebar .nav-links .sub-menu li:hover {
+    background: #45A6FF;
+    border-radius: 5px;
 }
 
-.iconeFlecha{
-  flex: 10%;
-  font-size: 25px;
+.sidebar .nav-links li .icon_options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.click{
-  background-color: #5490ff;
-  color: white;
-  display: flex;
-  flex-flow: row wrap;
-  height: 100px;
+.sidebar .nav-links li i {
+    height: 40px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    font-size: 22px;
+    transition: all 0.4s ease;
 }
 
-.liCriarComunidade{
-  display: flex;
-  flex-flow: column;
+.sidebar .nav-links li a {
+    text-decoration: none;
+    margin: 0px 0px 0px 10px;
 }
 
-.areaBtnInside{
-  background-color: #d5d5d5;
-  border-radius: 2px;
-  display: flex;
-  color: black;
-  flex-flow: nowrap;
-  gap: 10px;
-  height: 33px;
-  flex: 100%;
-  text-align: center;
-  align-items: center;
+.sidebar .nav-links li a .link_name {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
 }
 
-.containerInside{
-  flex: 100%;
-  display: flex;
-  flex-flow: column;
+.container-box {
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    width: 240px;
+    height: 36px;
+    margin: 0px 10px 10px 20px;
 }
 
-.iconeFlechaInside{
-  flex: 10%;
-  font-size: 20px;
-  padding-right: 10px;
+.container-box:hover {
+    background: #45A6FF;
 }
 
-.textoInside{
-  font-size: 18px;
-  padding-left: 20px;
-  flex: 85%;
-  text-align: start;
+.container-box-menu {
+    width: 150px;
+    height: 20px;
+    margin: 0px 5px 5px 0px;
+    border-radius: 5px;
 }
 
-.iconeInside{
-  font-size: 25px;
-  padding-left: 10px;
-  flex: 5%;
+.sidebar .nav-links li .sub-menu {
+    padding: 6px 20px 14px 20px;
+    margin-top: 0;
+    background: #fff;
+    display: none;
+    position: relative;
+    border-radius: 0 0 6px 6px;
 }
 
-.disciplinasClick{
-  background-color: #5490ff;
-  color: white;
-  display: flex;
-  flex-flow: row wrap;
-  height: 100px;
+.sidebar .nav-links li:hover .sub-menu {
+    display: block;
+}
+
+.sidebar .nav-links li .sub-menu a {
+    color: #000;
+    font-size: 15px;
+    padding: 5px 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li .sub-menu a:hover {
+    opacity: 1;
+}
+
+.sidebar.close .nav-links li .sub-menu {
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 0 6px 6px;
+}
+
+.sidebar.close .nav-links li .sub-menu .link_name {
+    display: none;
+}
+
+.sidebar.close .nav-links li .sub-menu .link_name {
+    font-size: 18px;
+    opacity: 1;
+    display: block;
 }
 
 header{
-  margin-left: 160px;
+  margin-left: 360px;
   width: 82%;
 }
 

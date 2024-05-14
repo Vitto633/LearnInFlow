@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/pag_perfil_style.css">
     <link rel="icon" href="assets/img/minLogo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
     <script src="assets/js/pag_perfil_script.js"></script>
     <link rel="icon" href="assets/img/minLogo.png">
 
@@ -39,7 +40,148 @@
             <button id="btnCadastro" onclick="newCommunity()"><img src="assets/img/Plus.png" alt="">Nova Comunidade</button>
         </div>
       </nav>
-    <main>
+
+      <main>
+        <div class="sidebar ">
+            <ul class="nav-links">
+                <li>
+                    <div class="container-box">
+                        <div class="icon_options">
+                            <a href="#">
+                                <i class="mdi mdi-home-account"></i>
+                                <span class="link_name">Página Inicial</span>
+                            </a>
+                            <i class="mdi mdi-arrow-top-right"></i>
+                        </div>
+                    </div>
+                    <ul class="sub-menu blank">
+                        <li>
+                            <a href="#">
+                                <span class="link_name">Página Inicial</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="container-box">
+                        <div class="icon_options">
+                            <a href="#">
+                                <i class="mdi mdi-account"></i>
+                                <span class="link_name">Perfil</span>
+                            </a>
+                            <i class="mdi mdi-arrow-top-right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container-box showMenu">
+                        <div class="icon_options">
+                            <a href="#">
+                                <i class="mdi mdi-account-group"></i>
+                                <span class="link_name">Comunidade</span>
+                            </a>
+                            <i class="mdi mdi-chevron-down arrow"></i>
+                        </div>
+                    </div>
+                    <ul class="sub-menu">
+                        <li>
+                            <div class="container-box-menu">
+                                <a href="#">
+                                    <img src="img/book-open-blank-variant-outline.svg" width="21px">
+                                    <span class="sub-name">Criar comunidade</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="container-box">
+                        <div class="icon_options">
+                            <a href="#">
+                                <i class="mdi mdi-pencil-outline"></i>
+                                <span class="link_name">Disciplinas</span>
+                            </a>
+                            <i class="mdi mdi-chevron-down arrow"></i>
+                        </div>
+                    </div>
+                    <ul class="sub-menu blank">
+                        <li>
+                            <a class="link_name" href="#">
+                                <i class="mdi mdi-pencil-outline"></i>
+                                <span class="link_name">Disciplinas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="container-box-menu">
+                                <a href="#">
+                                    <span class="sub-name">Português</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container-box-menu">
+                                <a href="#">
+                                    <span class="sub-name">Matemática</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container-box-menu">
+                                <a href="#">
+                                    <span class="sub-name">Inglês</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container-box-menu">
+                                <a href="#">
+                                    <span class="sub-name">Ciências</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container-box-menu">
+                                <a href="#">
+                                    <span class="sub-name">Geografia</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container-box-menu">
+                                <a href="#">
+                                    <span class="sub-name">História</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="container-box">
+                        <div class="icon_options">
+                            <a href="#">
+                                <i class="mdi mdi-cog"></i>
+                                <span class="link_name">Configurações</span>
+                            </a>
+                            <i class="mdi mdi-arrow-top-right"></i>
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+        <script>
+    
+            let arrow = document.querySelectorAll(".arrow");
+    
+            for (let i = 0; i < arrow.length; i++) {
+                arrow[i].addEventListener("click", (e)=>{
+                    
+                    let arrowParent = e.target.parentElement.parentElement.parentElement;
+                    console.log(arrowParent);
+                    arrowParent.classList.toggle("showMenu");
+                });
+            }
+        </script>
         <section class="user-profile">
             <img src="assets/img/userpic_big.png" alt="Imagem de Perfil" id="profilepic">
             <section class="user-data">
