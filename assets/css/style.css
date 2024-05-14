@@ -92,7 +92,7 @@ button:hover{
 .sidebar {
     position: absolute;
     left: 0;
-    height: 100%;
+    height: 100% !important;
     width: 275px;
     background-color: #fff;
 }
