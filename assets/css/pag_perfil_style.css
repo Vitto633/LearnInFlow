@@ -81,12 +81,13 @@ body{
     border-radius: 5px;
     font-size: 18px;
     margin-right: 10px;
-    img{
-        vertical-align: middle;
-        width: 15px;
-        height: 15px;
-        margin-right: 5px;
-    }
+  }
+
+  #btnCadastro img{
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
   }
 
 /* .navbar{
@@ -175,7 +176,6 @@ main{
 }
 
 .sidebar {
-    margin-top: 500px;
     position: absolute;
     left: 0;
     height: 100%;
@@ -659,11 +659,11 @@ main{
     background-color: white;
     width: 30px;
     height: 30px;
-    img{
-        width: 18px;
-        height: 18px;
-    }
+}
 
+#editdata-modal-x img{
+    width: 18px;
+    height: 18px;
 }
 
 #editdata-modal-title{
@@ -720,10 +720,11 @@ main{
     background-color: white;
     border: none;
     padding: 10px;
-    :hover{
-        background-color: #b9b9b9;
-        border-radius: 10px;
-    }
+}
+
+.title button:hover{
+    background-color: #b9b9b9;
+    border-radius: 10px;
 }
 
 #createcommunity-text{
@@ -771,13 +772,15 @@ main{
     padding: 6px 0px 13px 8px;
     margin-top: 18px;
     background-color: #E8E8E8;
-    input{
-        margin-left: auto;
-        margin-right: 8px;
-    }
-    img{
-        margin-right: 10px;
-    }
+}
+
+.opcao input{
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.opcao img{
+    margin-right: 10px;
 }
 
 #createcommunity-divisor{
@@ -850,12 +853,14 @@ main{
     border-radius: 5px;
     padding: 15px;
     background-color: #E8E8E8;
-    input{
-        margin-left: auto;
-    }
-    img{
-        margin-right: 10px;
-    }
+}
+
+.opcao2 input{
+    margin-left: auto;
+}
+
+.opcao2 img{
+    margin-right: 10px;
 }
 
 #label-title{
