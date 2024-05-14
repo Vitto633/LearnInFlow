@@ -19,6 +19,7 @@ body{
 
 #divisao{
   display: flex;
+  flex-flow: row nowrap !important;
 }
 
 #logoNavBar{
@@ -32,6 +33,7 @@ body{
 
 #btnsNavBar{
   flex: 20%;
+  /* flex-flow: row nowrap; */
 }
 #navBar{
   width: 100%;
@@ -47,8 +49,11 @@ body{
   height: 45px;
 }
 
+button:hover{
+  cursor: pointer;
+}
 #navBar input{
-  width: 900px;
+  width: 85%;
   height: 40px;
   margin: auto;
   border-radius: 70px;

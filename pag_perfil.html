@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
 
     <title>Página de Perfil</title>
 </head>
+
 <body>
 
     <!-- <header>
@@ -31,41 +33,42 @@
     <div id="overlay"></div>
     <nav id="navBar">
         <div id="logoNavBar">
-          <img src="assets/img/logoCompleto.png" alt="">
+            <img src="assets/img/logoCompleto.png" alt="">
         </div>
         <div id="inputNavBar">
-          <input type="text" placeholder="Pesquisar">
+            <input type="text" placeholder="Pesquisar">
         </div>
         <div id="btnsNavBar">
-            <button id="btnCadastro" onclick="newCommunity()"><img src="assets/img/Plus.png" alt="">Nova Comunidade</button>
+            <button id="btnCadastro" onclick="newCommunity()"><img src="assets/img/Plus.png" alt="">Nova
+                Comunidade</button>
         </div>
-      </nav>
+    </nav>
 
-      <main>
+    <main>
         <div class="sidebar ">
             <ul class="nav-links">
                 <li>
                     <div class="container-box">
                         <div class="icon_options">
-                            <a href="#">
+                            <a href="index.html">
                                 <i class="mdi mdi-home-account"></i>
                                 <span class="link_name">Página Inicial</span>
                             </a>
                             <i class="mdi mdi-arrow-top-right"></i>
                         </div>
                     </div>
-                    <ul class="sub-menu blank">
+                    <!-- <ul class="sub-menu blank">
                         <li>
-                            <a href="#">
-                                <span class="link_name">Página Inicial</span>
+                            <a href="index.html">
+                                <span class="link_name">Página Inicial kafçljçflkjdsçlf</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li>
                     <div class="container-box">
                         <div class="icon_options">
-                            <a href="#">
+                            <a href="pag_perfil.html">
                                 <i class="mdi mdi-account"></i>
                                 <span class="link_name">Perfil</span>
                             </a>
@@ -87,7 +90,7 @@
                         <li>
                             <div class="container-box-menu">
                                 <a href="#">
-                                    <img src="img/book-open-blank-variant-outline.svg" width="21px">
+                                    <i class="mdi mdi-book-open"></i>
                                     <span class="sub-name">Criar comunidade</span>
                                 </a>
                             </div>
@@ -158,7 +161,7 @@
                 <li>
                     <div class="container-box">
                         <div class="icon_options">
-                            <a href="#">
+                            <a href="pag_configuracoes.html">
                                 <i class="mdi mdi-cog"></i>
                                 <span class="link_name">Configurações</span>
                             </a>
@@ -170,12 +173,12 @@
             </ul>
         </div>
         <script>
-    
+
             let arrow = document.querySelectorAll(".arrow");
-    
+
             for (let i = 0; i < arrow.length; i++) {
-                arrow[i].addEventListener("click", (e)=>{
-                    
+                arrow[i].addEventListener("click", (e) => {
+
                     let arrowParent = e.target.parentElement.parentElement.parentElement;
                     console.log(arrowParent);
                     arrowParent.classList.toggle("showMenu");
@@ -188,7 +191,8 @@
                 <p id="username">Etec Has</p>
                 <section class="user-data-btns">
                     <button id="edit-btn" onclick="editBtn()">Editar perfil</button>
-                    <button id="newpost-btn" onclick="newPostBtn()"><span><img src="assets/img/Plus.png" alt=""></span>Nova postagem</button>
+                    <button id="newpost-btn" onclick="newPostBtn()"><span><img src="assets/img/Plus.png"
+                                alt=""></span>Nova postagem</button>
                 </section>
                 <section class="user-data-numbers">
                     <p id="number">5 Publicações</p>
@@ -197,10 +201,15 @@
                     <p id="number">3 Contas responsáveis</p>
                 </section>
                 <section class="user-data-btns2">
-                    <button id="localization-btn" onclick="editDataBtn()"><span><img src="assets/img/localization_icon.png" alt="Ícone de Localização" srcset=""></span>Localiz.</button>
-                    <button id="website-btn"><span><img src="assets/img/website_icon.png" alt="Ícone de WebSite"></span>Site</button>
-                    <button id="telephone-btn"><span><img src="assets/img/phone_icon.png" alt="Ícone de Telefone"></span>Telef.</button>
-                    <button id="email-btn"><span><img src="assets/img/mail_icon.png" alt="Ícone de Email"></span>Email</button>
+                    <button id="localization-btn" onclick="editDataBtn()"><span><img
+                                src="assets/img/localization_icon.png" alt="Ícone de Localização"
+                                srcset=""></span>Localiz.</button>
+                    <button id="website-btn"><span><img src="assets/img/website_icon.png"
+                                alt="Ícone de WebSite"></span>Site</button>
+                    <button id="telephone-btn"><span><img src="assets/img/phone_icon.png"
+                                alt="Ícone de Telefone"></span>Telef.</button>
+                    <button id="email-btn"><span><img src="assets/img/mail_icon.png"
+                                alt="Ícone de Email"></span>Email</button>
                 </section>
             </section>
         </section>
@@ -281,7 +290,8 @@
                 <h1>Criar comunidade</h1>
                 <button onclick="cancelBtn()"><img src="assets/img/X.png" alt=""></button>
             </div>
-            <p id="createcommunity-text">Crie uma comunidade e desenvolva o seu ensino para transformar realidades e promover o progresso.</p>
+            <p id="createcommunity-text">Crie uma comunidade e desenvolva o seu ensino para transformar realidades e
+                promover o progresso.</p>
             <input type="text" id="createcommunity-data">
             <div class="above-input">
                 <p id="createcommunity-text2">Não é possível alterar o nome após a criação</p>
@@ -294,13 +304,13 @@
                     Ensino Médio
                     <input type="checkbox" id="opcao1" name="opcao1" value="opcao1">
                 </label>
-        
+
                 <label class="opcao">
                     <img src="assets/img/bot-icon.png" alt="">
                     Ensino Técnico
                     <input type="checkbox" id="opcao2" name="opcao2" value="opcao2">
                 </label>
-        
+
                 <label class="opcao">
                     <img src="assets/img/people-icon.png" alt="">
                     Eventos Culturais
@@ -326,14 +336,16 @@
                 <h1>Criar comunidade</h1>
                 <button onclick="cancelBtn()"><img src="assets/img/X.png" alt=""></button>
             </div>
-            <p id="createcommunity-text">Crie uma comunidade e desenvolva o seu ensino para transformar realidades e promover o progresso.</p>
+            <p id="createcommunity-text">Crie uma comunidade e desenvolva o seu ensino para transformar realidades e
+                promover o progresso.</p>
             <p id="createcommunity-title">Tipo de acesso</p>
             <form class="options2">
                 <label class="opcao2">
                     <img src="assets/img/alertpeople-icon.png" alt="">
                     <div class="labeltxt">
                         <p id="label-title">Pública</p>
-                        <p id="label-subtitle">Um espaço aberto onde qualquer pessoa pode visualizar, postar e comentar.</p>
+                        <p id="label-subtitle">Um espaço aberto onde qualquer pessoa pode visualizar, postar e comentar.
+                        </p>
                     </div>
                     <input type="checkbox" id="opcao1" name="opcao1" value="opcao1">
                 </label>
@@ -341,16 +353,18 @@
                     <img src="assets/img/lockperson-icon.png" alt="">
                     <div class="labeltxt">
                         <p id="label-title">Acesso Parcial</p>
-                        <p id="label-subtitle">A visualização é aberta a todos, mas apenas usuários aprovados podem contribuir.</p>
+                        <p id="label-subtitle">A visualização é aberta a todos, mas apenas usuários aprovados podem
+                            contribuir.</p>
                     </div>
                     <input type="checkbox" id="opcao2" name="opcao2" value="opcao2">
                 </label>
-        
+
                 <label class="opcao2">
                     <img src="assets/img/lock-icon.png" alt="">
                     <div class="labeltxt">
                         <p id="label-title">Privada</p>
-                        <p id="label-subtitle">A visualização e postagem nesta comunidade são permitidas apenas para usuários aprovados.</p>
+                        <p id="label-subtitle">A visualização e postagem nesta comunidade são permitidas apenas para
+                            usuários aprovados.</p>
                     </div>
                     <input type="checkbox" id="opcao3" name="opcao3" value="opcao3">
                 </label>
@@ -379,4 +393,5 @@
         </section>
     </section>
 </body>
+
 </html>
